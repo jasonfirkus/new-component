@@ -14,7 +14,7 @@ import {
 } from "./helpers.js";
 import { mkDirPromise, readFilePromiseRelative, writeFilePromise } from "./utils.js";
 
-import pkg from "../package.json" assert { type: "json" };
+import pkg from "../package.json" with { type: "json" };
 const { version } = pkg;
 
 const config = getConfig();
